@@ -21,6 +21,10 @@ app.use(session({
 app.use(serve(__dirname + '/public'));
 
 router.get('/', function* (next) {
+	this.body = yield co_fs.readFile(__dirname + '/public/html/intro.html', 'utf8');
+});
+
+router.get('/index', function* (next) {
 	this.body = yield co_fs.readFile(__dirname + '/public/html/index.html', 'utf8');
 });
 
