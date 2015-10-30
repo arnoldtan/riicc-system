@@ -18,12 +18,14 @@
   "homepage": "https://github.com/arnoldtan/riicc-system#readme",
   "dependencies": {
     "co-body": "^4.0.0",
+    "co-fs": "^1.2.0",
     "co-views": "^2.1.0",
     "ejs": "^2.3.4",
     "koa": "^1.1.1",
     "koa-generic-session": "^1.9.2",
     "koa-redis": "^1.0.1",
     "koa-router": "^5.2.3",
+    "koa-static": "^1.5.1",
     "mysql": "^2.9.0",
     "sequelize": "^3.13.0"
   }
